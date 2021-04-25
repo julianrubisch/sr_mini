@@ -1,13 +1,12 @@
 {
-  "install": "bundle update; bundle install",
-  "start": "ruby application.rb",
+  "start": "ruby application.rb $PORT",
   "watch": {
     "install": {
       "include": ["^glitch\\.json$", "^Gemfile", "^\\.env$"],
       "exclude": []
     },
     "restart": {
-      "include": ["\\.rb$", "^config\\.ru$", "^public\\/"],
+      "include": ["\\.rb$", "\\.js$", "^public\\/"],
       "exclude": []
     },
     "throttle": 1000

@@ -82,4 +82,4 @@ class MiniApp < Rails::Application
 end
 
 system "yarn && yarn build", exception: true
-Rails::Server.new(app: MiniApp, Host: "0.0.0.0", Port: 3000).start
+Rails::Server.new(app: MiniApp, Host: "0.0.0.0", Port: ARGV[0]).start

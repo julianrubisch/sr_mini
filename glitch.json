@@ -1,5 +1,5 @@
 {
-  "start": "ruby application.rb $PORT",
+  "start": "redis-server &; ruby application.rb $PORT",
   "watch": {
     "install": {
       "include": ["^glitch\\.json$", "^Gemfile", "^\\.env$"],
